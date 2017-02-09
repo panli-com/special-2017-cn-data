@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+
+<head id="ctl00_Head1">
+    <title> - Panli代购</title>
+    <meta name="keywords" content="Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购">
+    <meta name="description" content="说出您的心声：3分钟填问卷，赢取最高50元代金券~Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求">
+    <link rel="dns-prefetch" href="//sf.panli.com">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="淘宝代购,海外代购,华人代购,代购中国">
+    <meta name="description" content="Panli代购网是全球最大的中国海外华人代购网站，专为海外华人代购淘宝、拍拍、当当等中国购物网站商品，支持PayPal等多种付款方式，使用Panli代购中国商品，尽享超低国际运费折扣。">
+    <link href="http://sf.panli.com/Ued/pc/common/images/favicon.ico?v=2016.07" type="image/ico" rel="shortcut icon">
+    <link type="text/css" rel="Stylesheet" href="http://sf.panli.com/Ued/Pc/index/build/css/main.min.css?v=20160706.15">
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script src="http://sf.panli.com/Public/jQuery/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="http://sf.panli.com/FrontEnd/js20090801/Gobal/Gobal.js" type="text/javascript"></script>
+    <link type="text/css" rel="Stylesheet" href="http://sf.panli.com/FrontEnd/css20090801/Gobal/Track.css">
+    <meta name="google-translate-customization" content="abd159107dba2713-91c58783ec64b085-g75588e1d1b433547-d">
+    <script type="text/javascript">
+        var PanLiNodeInfo = {
+            time: "1469678007"
+        };
+    </script>
+    <!-- panli.min 组件 -->
+    <script type="text/javascript" src="http://sf.panli.com/Ued/Pc/common/js/panli.min.js?v=0.0.12"></script>
+    <link rel="stylesheet" href="http://sf.panli.com/Ued/Pc/common/js/skin/pan.css" id="layui_layer_skinpancss">
+    <link rel="stylesheet" href="./build/css/app.css">
+    <script src="./build/js/app.js?v111"></script>
+</head>
+
+<body>
+    <!--top-->
+    <div class="r_l_nav" style="right: 25px; margin-right: 0px;">
+        <ul class="online-ul">
+            <li class="online-li online-li-one"><span class="icon_r_nav icon_r_navkf hover_b"></span>
+                <a href="http://www.panli.com/CustomerService/" target="_blank" class="hover_a" rel="nofollow">客服<br>中心</a>
+            </li>
+            <li class="online-li" id="r_download">
+                <span class="icon_r_nav icon_r_navapp hover_b"></span>
+                <a href="http://www.panli.com/Mobile/Index.aspx" target="_blank" class="hover_a" rel="nofollow">下载<br>APP</a>
+                <div class="icon_code_h">
+                    <div class="icon_code_p">
+                        <em class="r_l_line"></em>
+                    </div>
+                </div>
+            </li>
+            <li class="online-li none" id="black_Top" style="display: list-item;">
+                <span class="icon_r_nav  icon_r_navback hover_b"></span>
+                <a href="javascript:;" onclick="$('html,body').animate({ scrollTop: 0 }, 800);" class="hover_a">返回<br>顶部</a>
+            </li>
+            <li class="r_l_h40 none" id="index_message">
+                <span class="icon_r_nav icon_r_navjy hover_b"></span>
+                <a class="icon_r_nav icon_r_navjy_h hover_a" href="javascript:;" onclick="suggest()"></a>
+            </li>
+        </ul>
+    </div>
+    <!--top end-->
+    <script type="text/javascript" src="http://sf.panli.com/Ued/Pc/index/build/js/head_2016.js?2016041211"></script>
+    <header class="header">
+        <div class="shortcut" style="z-index:400;">
+            <div class="w top_nav">
+                <ul class="fl login">
+                    <li><a href="http://passport.panli.com/Register/">免费注册</a></li>
+                    <li><a href="http://passport.panli.com/Login.aspx?ReturnUrl=http%3a%2f%2fwww.panli.com%2f">登录</a></li>
+                    <li class="pl30">
+                        <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx3b24496f74bf93d0&amp;redirect_uri=http%3a%2f%2fpassport.panli.com%2fOauth%2fWeChatCallback.aspx&amp;response_type=code&amp;scope=snsapi_login&amp;state=59eecba924d45ea73d3c72f2d5b5607d#wechat_redirect;"><i class="icon_m icon_wx"></i>微信登录</a>
+                    </li>
+                    <li class="pl30"><a href="https://www.facebook.com/dialog/oauth/?client_id=563546080352185&amp;redirect_uri=http%3a%2f%2fpassport.panli.com%2fOauth%2fFacebookCallback.aspx&amp;scope=email&amp;display=page&amp;expires=0)"><i class="icon_m icon_fb"></i>Facebook登录</a></li>
+                </ul>
+                <ul class="fr">
+                    <li class="fore"><a href="http://www.panli.com/mypanli/ShoppingCart.aspx" target="_blank" rel="nofollow"><i class="icon_m icon_shop"></i>购物车<em class="top_red ShoppingNum"></em></a></li>
+                    <li class="fore"><a href="http://www.panli.com/mypanli/" rel="nofollow"><i class="icon_m icon_u"></i>我的Panli</a></li>
+                    <li class="fore"><a href="http://www.panli.com/mypanli/OrderCart.aspx" id="shoppingCart" rel="nofollow"><i class="icon_m icon_my"></i><span><em>我的仓库</em><em class="none gerenc">&nbsp;&nbsp;&nbsp;&nbsp;</em></span><em class="top_red OrderNum"></em></a></li>
+                    <li class="fore fore_p fore_gwx" data-hover="fore_b">
+                        <a href="javascript:;">关注微信<em class="icon_m icon_j"></em></a>
+                        <em class="code_line"></em>
+                        <div class="code_hover"></div>
+                    </li>
+                    <li class="fore fore_p fore_gwx2" data-hover="fore_h">
+                        <a href="http://service.panli.com/" target="_blank">帮助中心<em class="icon_m icon_j"></em></a>
+                        <div class="help_l">
+                            <a href="http://www.panli.com/Tools/Estimates.aspx" target="_blank">费用估算</a>
+                            <a href="http://www.panli.com/Help/Postage.aspx" target="_blank">运费对比</a>
+                            <a href="http://www.panli.com/Tools/Track.aspx" target="_blank">包裹跟踪</a>
+                            <a href="http://qq.ip138.com/hl.asp" target="_blank">汇率换算</a>
+                            <a href="http://www.panli.com/Tools/MeasureConversion.aspx" target="_blank">尺码换算</a>
+                            <a href="http://www.panli.com/Crawl/Download.aspx" target="_blank">代购助手</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cb"></div>
+            </div>
+        </div>
+        <div class="w por header-logo">
+            <div class="logo-wrap logo">
+                <a href="http://www.panli.com"><img src="http://sf.panli.com/Ued/Pc/index/build/images/logo.png" alt="panli logo"></a>
+            </div>
+            <div class="search-wrap search">
+                <div class="tab-seach-sel-wrap">
+                    <a href="javascript:void(0);" class="tab-sel-clk on material-design" data-val="1" data-color="#F5E3E3">代购</a>
+                    <a href="javascript:void(0);" class="tab-sel-2 material-design" data-val="1" data-color="#F5E3E3">转运</a>
+                    <span class="seach-sanjiao"></span>
+                </div>
+                <div class="search-help-wrap">
+                    <a href="http://www.panli.com/transport/" target="_blank">如何<span>转运</span></a>
+                </div>
+                <input type="text" class="fl search_text head-search-text" autofocus="true" placeholder="已经找好要代购的宝贝了吗？快把宝贝的网址粘贴过来～">
+                <span class="fl button" id="headSearch">我要<span class="search-val-text">代购</span></span>
+                <p>
+                    <span class="fl">代购支持商家:</span>
+                    <a href="http://www.taobao.com" target="_blank" rel="nofollow">
+                        淘宝
+                    </a>
+                    <a href="http://www.tmall.com" target="_blank" rel="nofollow">
+                        天猫
+                    </a>
+                    <a href="http://www.jd.com" target="_blank" rel="nofollow">
+                        京东
+                    </a>
+                    <a href="http://www.meilishuo.com" target="_blank" rel="nofollow">
+                        美丽说
+                    </a>
+                    <a href="http://www.mogujie.com" target="_blank" rel="nofollow">
+                        蘑菇街
+                    </a>
+                    <a href="http://www.1688.com" target="_blank" rel="nofollow">
+                        阿里巴巴
+                    </a>
+                    <a href="http://www.yhd.com" target="_blank" rel="nofollow">
+                        1号店
+                    </a>
+                    <a href="http://www.vip.com" target="_blank" rel="nofollow">
+                        唯品会
+                    </a>
+                    <a href="http://www.amazon.cn" target="_blank" rel="nofollow">
+                        亚马逊中国
+                    </a>&nbsp;&nbsp;等中国购物网站
+                </p>
+            </div>
+            <div class="cb"></div>
+        </div>
+        <div class="shortcut" id="nav_list">
+            <div class="w">
+                <ul class="nav clearfix">
+                    <li data-on="index" class="on"><a href="http://www.panli.com" class="nav_l">首页</a></li>
+                    <li class="zhidemai"><a href="http://www.panli.com/Special/TopicColumn.aspx" class="nav_l">值得买</a></li>
+                    <li><a href="http://www.panli.com/Piece" class="nav_l">拼单</a></li>
+                    <li><a href="http://tuan.panli.com" class="nav_l">团购</a></li>
+                    <li data-on="bbs"><a href="http://bbs.panli.com" class="nav_l" target="_blank" rel="nofollow">社区</a></li>
+                    <li data-on="mobile"><a href="http://www.panli.com/Mobile/Index.aspx" class="nav_l" target="_blank">手机版</a></li>
+                </ul>
+                <div class="cb"></div>
+            </div>
+        </div>
+    </header>
+    <div id="frame">
+        <!--banner-->
+        <div class="sp-banner">
+        </div>
+        <!--banner end-->
+        <div class="sp-header sp-w-1000">
+            <div class="sp-header-img">
+                <img src="./build/imgs/activity-details.png" alt="">
+                <a href="" title="我的代金卷">&nbsp;</a>
+            </div>
+            <div class="sp-header-img2">
+                <img src="./build/imgs/three-reasons.png" alt="">
+            </div>
+        </div>
+        <!--list-->
+        <div class="sp-list sp-w-1000">
+            <ul>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=128" class="thumb" target="_blank"><img src="http://img.panlidns.com/CMS/discountProduct/ad/0/87cecca9-3db6-4101-8aba-de7f3c4dc4b5围巾2.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=128" title="明星同款四季通用棉麻围巾(灰)【Panli特卖】" target="_blank">明星同款四季通用棉麻围巾(灰)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥39.00</div>
+                            <div class="Preferential">特价: ￥<span>11.00</span></div>
+                            <div class="Surplus">（剩余5件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=128" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=92" class="thumb" target="_blank"><img src="http://img.panlidns.com/CMS/discountProduct/ad/92/53fb62cd-986f-40d2-adfc-426279ed8118TB1AzG5HpXXXXcpaXXXXXXXXXXX_!!0-item_pic.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=92" title="樱桃小丸子红包(随机款)【Panli特卖】" target="_blank">樱桃小丸子红包(随机款)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥1.20</div>
+                            <div class="Preferential">特价: ￥<span>0.50</span></div>
+                            <div class="Surplus">（剩余1件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=92" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Sold_out"></div>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=83" class="thumb" target="_blank"><img src="http://img.panlidns.com/CMS/discountProduct/ad/0/bf54f99c-fd2e-42c2-8745-f82b84301525333333.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=83" title="蝴蝶结发箍(红色)【Panli特卖】" target="_blank">蝴蝶结发箍(红色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥13.80</div>
+                            <div class="Preferential">特价: ￥<span>2.90</span></div>
+                            <div class="Surplus">（剩余0件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=83" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_18.gif" title="抢光啦！"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=84" class="thumb" target="_blank"><img src="http://img.panlidns.com/CMS/discountProduct/ad/0/0011117e-53fb-4d5a-9ee0-5343bdd31d9c444444.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=84" title="蝴蝶结发箍(蓝色)【Panli特卖】" target="_blank">蝴蝶结发箍(蓝色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥13.80</div>
+                            <div class="Preferential">特价: ￥<span>2.90</span></div>
+                            <div class="Surplus">（剩余3件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=84" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=62" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i3/TB1i1p9IpXXXXbrXFXXXXXXXXXX_!!0-item_pic.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=62" title="秘密花园:一本解压手绘涂色书【Panli特卖】" target="_blank">秘密花园:一本解压手绘涂色书【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥28.00</div>
+                            <div class="Preferential">特价: ￥<span>5.00</span></div>
+                            <div class="Surplus">（剩余2件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=62" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=88" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i4/TB1hscIKpXXXXciXVXXXXXXXXXX_!!0-item_pic.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=88" title="超萌猫咪束发带(白色)【Panli特卖】" target="_blank">超萌猫咪束发带(白色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥12.09</div>
+                            <div class="Preferential">特价: ￥<span>3.50</span></div>
+                            <div class="Surplus">（剩余1件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=88" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=68" class="thumb" target="_blank"><img src="http://img.panlidns.com/CMS/discountProduct/ad/68/112675b6-7f37-406a-b460-607bff4396ce5555.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=68" title="多功能葫芦棉(随机色)【Panli特卖】" target="_blank">多功能葫芦棉(随机色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥19.98</div>
+                            <div class="Preferential">特价: ￥<span>4.50</span></div>
+                            <div class="Surplus">（剩余2件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=68" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=63" class="thumb" target="_blank"><img src="http://img.panlidns.com/CMS/discountProduct/ad/0/c7b5bef5-5c30-46b2-91c9-a426282557a9333.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=63" title="会发光会表白的大白挂件【Panli特卖】" target="_blank">会发光会表白的大白挂件【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥48.00</div>
+                            <div class="Preferential">特价: ￥<span>0.50</span></div>
+                            <div class="Surplus">（剩余2件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=63" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Sold_out"></div>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=90" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i1/T1Q3XEFCpAXXXXXXXX_!!0-item_pic.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=90" title="可爱兔子通用懒人手机架(随机色)【Panli特卖】" target="_blank">可爱兔子通用懒人手机架(随机色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥58.00</div>
+                            <div class="Preferential">特价: ￥<span>4.90</span></div>
+                            <div class="Surplus">（剩余0件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=90" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_18.gif" title="抢光啦！"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=74" class="thumb" target="_blank"><img src="http://img.panlidns.com/CMS/discountProduct/ad/74/0d4efc01-0793-4e04-b0a4-b0be33f30a5794.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=74" title="奶白色蕾丝长袖衬衫【Panli特卖】" target="_blank">奶白色蕾丝长袖衬衫【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥379.00</div>
+                            <div class="Preferential">特价: ￥<span>9.00</span></div>
+                            <div class="Surplus">（剩余1件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=74" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=80" class="thumb" target="_blank"><img src="http://img.panlidns.com/CMS/discountProduct/ad/80/4c15c9fc-55b1-423e-87a5-b1066cc591a330.png"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=80" title=" 小优家小猫包(梅红色)【Panli特卖】" target="_blank"> 小优家小猫包(梅红色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥109.00</div>
+                            <div class="Preferential">特价: ￥<span>29.00</span></div>
+                            <div class="Surplus">（剩余1件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=80" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=64" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i3/TB1V8iJJpXXXXbnXVXXXXXXXXXX_!!0-item_pic.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=64" title="马卡龙暖手袋(随机色)【Panli特卖】" target="_blank">马卡龙暖手袋(随机色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥58.00</div>
+                            <div class="Preferential">特价: ￥<span>25.00</span></div>
+                            <div class="Surplus">（剩余1件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=64" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=162" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i2/2412710922/TB2PYh9kVXXXXXWXpXXXXXXXXXX_!!2412710922.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=162" title="肩带防滑隐形扣3枚装(随机款)【Panli特卖】" target="_blank">肩带防滑隐形扣3枚装(随机款)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥7.90</div>
+                            <div class="Preferential">特价: ￥<span>1.50</span></div>
+                            <div class="Surplus">（剩余1件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=162" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=145" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i4/T1XldRFTNcXXXXXXXX_!!0-item_pic.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=145" title="韩国百搭蕾丝假领(黑)【Panli特卖】" target="_blank">韩国百搭蕾丝假领(黑)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥39.90</div>
+                            <div class="Preferential">特价: ￥<span>19.00</span></div>
+                            <div class="Surplus">（剩余4件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=145" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Sold_out"></div>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=154" class="thumb" target="_blank"><img src="http://img.panlidns.com/CMS/discountProduct/ad/154/be246d47-0eef-40cc-9755-6f2fe9078ff0TB1PzeWLXXXXXbcXFXXXXXXXXXX.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=154" title="大容量旅行防水手提单肩斜跨包(随机色)【Panli特卖】"
+                            target="_blank">大容量旅行防水手提单肩斜跨包(随机色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥160.00</div>
+                            <div class="Preferential">特价: ￥<span>45.00</span></div>
+                            <div class="Surplus">（剩余0件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=154" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_18.gif" title="抢光啦！"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=110" class="thumb" target="_blank"><img src="http://img.panlidns.com/CMS/discountProduct/ad/110/d98cb643-5180-4e92-8155-c6c98379a3911111111.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=110" title="亮丝款小号皮筋*10(随机色)【Panli特卖】" target="_blank">亮丝款小号皮筋*10(随机色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥2.00</div>
+                            <div class="Preferential">特价: ￥<span>0.90</span></div>
+                            <div class="Surplus">（剩余80件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=110" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=115" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i1/852447223/TB2WeSblFXXXXaMXpXXXXXXXXXX_!!852447223.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=115" title="太阳的后裔同款耳钉(随机色)【Panli特卖】" target="_blank">太阳的后裔同款耳钉(随机色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥26.00</div>
+                            <div class="Preferential">特价: ￥<span>11.00</span></div>
+                            <div class="Surplus">（剩余13件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=115" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=142" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i3/TB1WhnJLVXXXXacaXXXXXXXXXXX_!!0-item_pic.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=142" title="beautyblend平头化妆刷【Panli特卖】"
+                            target="_blank">beautyblend平头化妆刷【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥128.00</div>
+                            <div class="Preferential">特价: ￥<span>35.00</span></div>
+                            <div class="Surplus">（剩余5件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=142" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=138" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i4/1028288921/TB22zXUkpXXXXbpXXXXXXXXXXXX_!!1028288921.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=138" title="韩国超萌笑脸发绳(随机色)【Panli特卖】" target="_blank">韩国超萌笑脸发绳(随机色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥35.00</div>
+                            <div class="Preferential">特价: ￥<span>10.00</span></div>
+                            <div class="Surplus">（剩余5件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=138" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=120" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i4/TB1aNp2FVXXXXbfaXXXXXXXXXXX_!!0-item_pic.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=120" title="宝宝动物摇铃手腕带(随机款)【Panli特卖】" target="_blank">宝宝动物摇铃手腕带(随机款)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥13.00</div>
+                            <div class="Preferential">特价: ￥<span>11.00</span></div>
+                            <div class="Surplus">（剩余9件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=120" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=117" class="thumb" target="_blank"><img src="http://img.panlidns.com/CMS/discountProduct/ad/117/4a487474-4ee3-4136-94be-4b4f3042511dtu1.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=117" title="皮质打结复古发箍(随机款)【Panli特卖】" target="_blank">皮质打结复古发箍(随机款)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥25.00</div>
+                            <div class="Preferential">特价: ￥<span>11.00</span></div>
+                            <div class="Surplus">（剩余9件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=117" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Sold_out"></div>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=123" class="thumb" target="_blank"><img src="http://img.panlidns.com/CMS/discountProduct/ad/0/7fd6b159-3041-45be-9854-6e63535fc86c笔记本1.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=123" title="5寸复古旅行日记本(随机色)【Panli特卖】" target="_blank">5寸复古旅行日记本(随机色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥15.00</div>
+                            <div class="Preferential">特价: ￥<span>11.00</span></div>
+                            <div class="Surplus">（剩余0件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=123" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_18.gif" title="抢光啦！"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=167" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i2/2650319273/TB2ZA9mqFXXXXbjXpXXXXXXXXXX_!!2650319273.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=167" title="简约1字型耳环(随机色)【Panli特卖】" target="_blank">简约1字型耳环(随机色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥22.50</div>
+                            <div class="Preferential">特价: ￥<span>6.80</span></div>
+                            <div class="Surplus">（剩余7件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=167" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=160" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i4/TB1vqRPLVXXXXarXVXXXXXXXXXX_!!0-item_pic.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=160" title="民族风复古松石多层脚饰【Panli特卖】" target="_blank">民族风复古松石多层脚饰【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥15.80</div>
+                            <div class="Preferential">特价: ￥<span>8.90</span></div>
+                            <div class="Surplus">（剩余8件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=160" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=143" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i2/TB1tOEQLFXXXXbpXVXXXXXXXXXX_!!0-item_pic.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=143" title="健身杠铃钛钢项链(随机色)【Panli特卖】" target="_blank">健身杠铃钛钢项链(随机色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥45.00</div>
+                            <div class="Preferential">特价: ￥<span>25.00</span></div>
+                            <div class="Surplus">（剩余14件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=143" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=131" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i2/TB1ft7jGFXXXXbWXVXXXXXXXXXX_!!0-item_pic.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=131" title="日系假过膝拼接连裤袜【Panli特卖】" target="_blank">日系假过膝拼接连裤袜【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥29.90</div>
+                            <div class="Preferential">特价: ￥<span>11.00</span></div>
+                            <div class="Surplus">（剩余2件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=131" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=104" class="thumb" target="_blank"><img src="http://img.alicdn.com/imgextra/i1/TB1xbZUJVXXXXXxXpXXXXXXXXXX_!!0-item_pic.jpg"></a>
+                    <div class="Berserk_title">
+                        <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=104" title="卡通激萌硅胶零钱包(随机色)【Panli特卖】" target="_blank">卡通激萌硅胶零钱包(随机色)【Panli特卖】</a>
+                    </div>
+                    <div class="Berserk_Price">
+                        <div class="original_left">
+                            <div class="yuanjia">原价: ￥29.50</div>
+                            <div class="Preferential">特价: ￥<span>9.00</span></div>
+                            <div class="Surplus">（剩余2件）</div>
+                        </div>
+                        <div class="buying_right">
+                            <a href="http://www.panli.com/special/Thanksgiving2015/PC/PromotionPay.aspx?proId=104" target="_blank"><img src="http://sf.panli.com/Ued/Special/20151111/css/cssImg/Berserk_goods_16.gif" title="立即抢购"></a>
+                        </div>
+                    </div>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <!--list end-->
+    </div>
+    <!--footer-->
+    <div class="shortcut footer">
+        <div class="w">
+            <div class="service_l">
+                <dl class="fl">
+                    <dt>新手上路</dt>
+                    <dd><a href="http://service.panli.com/Help/List/5.html" target="_blank" rel="nofollow">新人须知</a></dd>
+                    <dd><a href="http://www.panli.com/services-rates/" target="_blank" rel="nofollow">服务与费用</a></dd>
+                    <dd><a href="http://service.panli.com/Help/List/9.html" target="_blank" rel="nofollow">账户管理</a></dd>
+                    <dd><a href="http://service.panli.com/Help/List/8.html" target="_blank" rel="nofollow">会员等级和番币</a></dd>
+                </dl>
+                <dl class="fl">
+                    <dt>购物指南</dt>
+                    <dd><a href="http://service.panli.com/Help/Detail/13.html" target="_blank" rel="nofollow">挑选商品</a></dd>
+                    <dd><a href="http://service.panli.com/Help/Detail/12.html" target="_blank" rel="nofollow">购物流程</a></dd>
+                    <dd><a href="http://service.panli.com/Help/Detail/14.html" target="_blank" rel="nofollow">如何生成订单</a></dd>
+                    <dd><a href="http://service.panli.com/Help/Detail/16.html" target="_blank" rel="nofollow">查询订单状态</a></dd>
+                </dl>
+                <dl class="fl">
+                    <dt>支付说明</dt>
+                    <dd><a href="http://service.panli.com/Help/Detail/333.html" target="_blank" rel="nofollow">paypal 支付</a></dd>
+                    <dd><a href="http://service.panli.com/Help/Detail/23.html" target="_blank" rel="nofollow">国际信用卡</a></dd>
+                    <dd><a href="http://service.panli.com/Help/Detail/24.html" target="_blank" rel="nofollow">国内银行卡</a></dd>
+                    <dd><a href="http://service.panli.com/Help/List/6.html" target="_blank" rel="nofollow">其他汇款方式</a></dd>
+                </dl>
+                <dl class="fl">
+                    <dt>配送说明</dt>
+                    <dd><a href="http://www.panli.com/Help/Postage.aspx" target="_blank" rel="nofollow">运输方式和费用对比</a></dd>
+                    <dd><a href="http://service.panli.com/Help/Detail/38.html" target="_blank" rel="nofollow">大宗商品的运费</a></dd>
+                    <dd><a href="http://service.panli.com/Help/Detail/39.html" target="_blank" rel="nofollow">海关及税项</a></dd>
+                    <dd><a href="http://service.panli.com/Help/Detail/40.html" target="_blank" rel="nofollow">收货注意事项</a></dd>
+                </dl>
+                <dl class="fl">
+                    <dt>售后服务</dt>
+                    <dd><a href="http://service.panli.com/Help/Detail/28.html" target="_blank" rel="nofollow">商品退换货原则</a></dd>
+                    <dd><a href="http://service.panli.com/Help/Detail/29.html" target="_blank" rel="nofollow">商品退换货流程</a></dd>
+                    <dd><a href="http://service.panli.com/Help/Detail/20.html" target="_blank" rel="nofollow">商品的保管期限</a></dd>
+                    <dd><a href="http://service.panli.com/Help/Detail/18.html" target="_blank" rel="nofollow">如何退款</a></dd>
+                </dl>
+                <dl class="fl">
+                    <dt>常用工具</dt>
+                    <dd><a href="http://www.panli.com/Tools/Estimates.aspx" target="_blank" rel="nofollow">费用估算</a></dd>
+                    <dd><a href="http://www.panli.com/Tools/Track.aspx" target="_blank" rel="nofollow">包裹跟踪</a></dd>
+                    <dd><a href="http://qq.ip138.com/hl.asp" target="_blank" rel="nofollow">汇率换算</a></dd>
+                    <dd><a href="http://www.panli.com/Tools/MeasureConversion.aspx" target="_blank" rel="nofollow">尺码换算</a></dd>
+                </dl>
+                <div class="fr two_code">
+                    <span>手机Panli</span>
+                    <img src="http://sf.panli.com/Ued/pc/footer/images/appcode.png" width="99" alt="appcode" />
+                </div>
+                <div class="fr two_code code_margin">
+                    <span>关注微信</span>
+                    <img src="http://sf.panli.com/Ued/pc/footer/images/weixincode.jpg" width="99" alt="weixincode" />
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="footer_nav">
+                <a target="_blank" href="http://hr.panli.com/" rel="nofollow">关于我们</a>
+                <a href="/news/about.aspx?nid=5" rel="nofollow">联系我们</a>
+                <a target="_blank" href="http://hr.panli.com/job_index.aspx" rel="nofollow">加入 Panli</a>
+                <a href="/news/about.aspx?nid=14" rel="nofollow">友情链接</a>
+                <a href="/news/about.aspx?nid=210" rel="nofollow">网站地图</a>
+                <a href="http://www.panli.com/Information" rel="nofollow">Panli 故事</a>
+                <a href="http://www.panli.com/Mobile/Index.aspx" rel="nofollow">手机 Panli</a>
+                <div class="cb"></div>
+            </div>
+            <div class="copyright">
+                Copyright ©2016 Panli代购! Inc. All rights reserved. <a href="http://www.miibeian.gov.cn" target="_blank" style="color: #999;">沪ICP备13043455号-1</a>
+            </div>
+            <div class="authentication">
+                <a href="http://www.ectrustprc.org.cn/certificate.id/certificateb.php?id=20007298" class="authentication_a1" target="_blank"></a>
+                <a href="https://www.paypal.com/verified/pal=paypal@panli.com" class="authentication_a2" target="_blank"></a>
+                <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20120423152518650" class="authentication_a3" target="_blank"></a>
+            </div>
+            <div class="links">友情链接：
+                <a href="http://info.17ugo.com/" target="_blank">优购物</a><a href="http://www.afuchina.com/" target="_blank">比价网</a><a
+                    href="http://www.zbird.com/diamond/" target="_blank">裸钻定制</a><a href="http://www.kantao.net" target="_blank">看淘网</a>
+                <a href="http://www.sxxl.com/" target="_blank">服装设计</a><a href="http://www.yqbdt.com" target="_blank">地摊货批发网</a><a
+                    href="http://www.shoeshr.com" target="_blank">中国鞋业人才网</a><a href="http://www.gougoujp.com/" target="_blank">日本代购</a>
+            </div>
+            <p class="ft_panli_about">Panli代购是全球最大的海外华人代购中国商品网站，专为海外华人提供<a href="http://www.panli.com/daigou/" target="_blank">淘宝代购</a> 、京东、当当等中国购物网站商品，提供图书、特产、化妆品等多种商品代购，支持
+                paypal 、 支付宝等多种支付方式。Panli 代购目前在美国、英国、新加坡、澳洲、加拿大等全球范围内的 华人代购和留学生代购市场中都有着超好的口碑。</p>
+        </div>
+    </div>
+    <!--footere end-->
+</body>
+
+
+</html>

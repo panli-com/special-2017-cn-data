@@ -1,0 +1,98 @@
+    .banner {
+        height: 516px;
+        background: url(../imgs/banner.png) no-repeat center center;
+        background-size: 720px 517px;
+    }
+    
+    .header {
+        padding: 30px;
+        padding-bottom: 0;
+        img {
+            width: 660px;
+            height: 342px;
+        }
+    }
+    
+    .list-wrap {
+        padding-top: 10px;
+        padding-left: .4rem;
+        img {
+            max-width: 100%;
+        }
+        li {
+            width: 4.8rem;
+            float: left;
+            &.no {
+                .thumb {
+                    span {
+                        position: absolute; 
+                        width: 3rem;
+                        height: 3rem;
+                        background: url(../imgs/sold-out.png) center center no-repeat;
+                        background-size: contain;
+                        left: 50%;
+                        top: 50%;
+                        margin-left: -1.5rem;
+                        margin-top: -1.5rem;
+                    }
+                }
+            }
+            a {
+                display: block;
+                padding: .4rem .4rem 0 0;
+                text-decoration: none;
+            }
+            p {
+                padding: 0 10px;
+                /*no*/
+                font-size: 12px;
+                /*no*/
+                &.p1 {
+                    color: #888;
+                }
+                &.p2 {
+                    color: #fa1e45;
+                    line-height: 14px;
+                    /*no*/
+                }
+                &.p3 {
+                    color: #888;
+                }
+            }
+            .lprice {
+                font-weight: 700;
+                font-size: 16px;
+                /*no*/
+            }
+            .box-bg {
+                background-color: #FFF;
+                padding-bottom: 5px;
+                /*no*/
+                position: relative;
+            }
+            .thumb {
+                position: relative;
+                width: 4.4rem;
+                height: 4.4rem;
+                overflow: hidden;
+                background: url(../imgs/loading.gif) center center no-repeat;
+            }
+            .title {
+                color: #333;
+                font-weight: 600;
+                margin-top: 5px;
+                /*no*/
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 1;
+                line-clamp: 1;
+                -webkit-box-orient: vertical;
+                box-orient: vertical;
+                margin-bottom: 2px;
+                /*no*/
+                padding: 0 10px;
+                /*no*/
+            }
+        }
+    }
