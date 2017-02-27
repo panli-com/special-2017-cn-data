@@ -1,0 +1,125 @@
+.footer {
+  margin-top: 0; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.sp-w-1000 {
+  width: 1000px;
+  margin: 0 auto; }
+
+.yelleo {
+  color: #fffc00; }
+
+.clear {
+  clear: both;
+  overflow: hidden; }
+
+.sp-w100 {
+  width: 100%;
+  background-color: #7300ce;
+  min-height: 200px; }
+
+#frame {
+  min-width: 1000px;
+  width: 100%;
+  background-color: #8101e7; }
+
+.sp- {
+  min-width: 1000px; }
+  .sp-banner {
+    height: 627px;
+    min-width: 1000px;
+    background: #8101e7 url(../imgs/banner.png) no-repeat center -10px; }
+  .sp-header {
+    padding-bottom: 30px; }
+  .sp-title-n1 {
+    height: 50px;
+    background: url(../imgs/t1.png) no-repeat center center; }
+  .sp-title-n2 {
+    height: 48px;
+    background: url(../imgs/t2.png) no-repeat center bottom; }
+  .sp-more {
+    text-align: right;
+    padding: 20px; }
+    .sp-more a {
+      color: #FFF;
+      -webkit-transition: .3s;
+      -moz-transition: .3s;
+      transition: .3s; }
+      .sp-more a:hover {
+        color: #fffc00; }
+  .sp-user-wrap {
+    text-align: center;
+    padding-top: 26px; }
+  .sp-user-box {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 32px;
+    border: 2px solid #952eff;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #8101e7;
+    color: #FFF; }
+  .sp-floor-n1 {
+    padding-bottom: 36px; }
+  .sp-floor-content {
+    min-height: 200px;
+    background-color: #6700ba; }
+  .sp-list-ticket {
+    padding: 20px 0; }
+    .sp-list-ticket ul {
+      clear: both;
+      overflow: hidden;
+      padding-left: 16px; }
+    .sp-list-ticket li {
+      margin-left: 14px;
+      margin-bottom: 14px;
+      float: left; }
+    .sp-list-ticket img, .sp-list-ticket a {
+      display: block;
+      cursor: pointer; }
+  .sp-list-shop {
+    padding-bottom: 16px; }
+    .sp-list-shop ul {
+      padding-left: 10px; }
+    .sp-list-shop li {
+      float: left;
+      margin-left: 8px;
+      margin-bottom: 10px; }
+    .sp-list-shop img, .sp-list-shop a {
+      display: block;
+      cursor: pointer; }
+  .sp-detail {
+    padding: 30px 0; }
+  .sp-footer {
+    padding-bottom: 50px; }
+
+.floor-nav {
+  position: fixed;
+  left: 10px;
+  margin-top: -201px;
+  top: 50%;
+  z-index: 9999;
+  width: 179px;
+  height: 239px;
+  background: url(../imgs/nav.png) center top no-repeat;
+  display: none; }
+  .floor-nav-u {
+    padding-top: 80px; }
+  .floor-nav li {
+    background-color: transparent;
+    cursor: pointer; }
+  .floor-nav a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block; }
+  .floor-nav .li1 {
+    height: 60px; }
+  .floor-nav .li2 {
+    height: 58px; }
+  .floor-nav .li3 {
+    height: 42px; }

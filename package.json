@@ -1,6 +1,6 @@
 {
   "name": "special-2017-cn",
-  "app": "调查问卷",
+  "app": "special-2017-cn",
   "version": "0.0.1",
   "description": "special 2017",
   "main": "index.js",
