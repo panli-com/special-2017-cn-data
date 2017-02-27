@@ -1,0 +1,92 @@
+    .banner {
+        height: 523px;
+        background: url(../imgs/banner.png) no-repeat center center;
+        background-size: 720px 523px;
+    }
+    
+    .header {
+        padding: 30px;
+        padding-bottom: 0;
+        a {
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 0;
+            font-size: 30px;
+            color: #FFF;
+            background-color: #952eff;
+            position: relative;
+            &.on {
+                color: #fffc00;
+                background-color: #6000ac;
+                &::before {
+                    display: block;
+                    content: '';
+                    border-width: 18px 18px 18px 18px;
+                    border-style: solid;
+                    border-color: #6000ac transparent transparent transparent;
+                    position: absolute;
+                    left: 50%;
+                    top: 100%;
+                    margin-left: -9px;
+                }
+            }
+        }
+    }
+
+
+
+.sp{
+    &-user{
+        &-wrap{
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 24px;
+        }
+        &-box{
+            display: inline-block;
+            border: 2px solid #952eff; /* no */
+            color: #FFF;
+            border-radius: 50px;
+            padding: 5px 20px;
+            font-size: 24px;
+        }
+    }
+
+    &-list-ticket{
+        text-align: center;
+
+        li{
+            margin-bottom: 20px;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 660px;
+            height: 120px;
+        }
+
+    }
+}
+
+.seed{
+    text-align: center;
+    padding-top: 20px;
+    img{
+        margin: 0 auto;
+        display: block;
+        width: 660px;
+        height: 205px;
+    }
+}
+
+
+.footer-details{
+    text-align: center;
+    padding: 30px 0;
+    img{
+        margin: 0 auto;
+        display: block;
+        width: 660px;
+        height: 310px;
+    }
+}
