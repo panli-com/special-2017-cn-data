@@ -2345,7 +2345,7 @@
 
         // // Display a success notification
         // notyf.confirm('Your changes have been successfully saved!');
-        tabNav.on("click", "a", function () {
+        tabNav.on("click", ".flex-n1", function () {
             tabNav.find("a").removeClass("on")
             var _t = PD(this);
             var floor = _t.attr("floor")
