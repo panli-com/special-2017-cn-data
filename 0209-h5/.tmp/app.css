@@ -604,6 +604,13 @@ textarea {
   background-size: 10rem 7.180556rem;
 }
 
+.banner-2 {
+  height: 9.75rem;
+  background: url(../imgs/banner-2.png) no-repeat center center;
+  -moz-background-size: 10rem 9.75rem;
+  background-size: 10rem 9.75rem;
+}
+
 .header {
   padding: 0.416667rem;
   padding-bottom: 0;
