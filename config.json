@@ -1,5 +1,5 @@
 {   
-    "start":"0209-h5",
+    "start":"0224-h5",
     "0224-h5": {
         "title": "12周年领券活动 H5",
         "keywords":"",
@@ -8,7 +8,7 @@
         "author":"Julian",
         "load": {
             "css": ["./0224-h5/src/scss/main.scss"],
-            "js": ["./libs/js/D.js","./libs/js/view-rem720.js","./libs/notyf/notyf.js","./libs/js/google.js","./0224-h5/src/js/*.js"]
+            "js": ["./libs/js/D.js","./libs/js/view-rem720.js","./0224-h5/src/js/*.js"]
         },
         "build":{
             "css":"app.css",
