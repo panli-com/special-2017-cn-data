@@ -67,22 +67,45 @@
                         </li>
                     </ul>
                 </div>
+                 <footer class="footer-details">
+                    <img src="./build/imgs/details.png" alt="">
+                </footer>
             </div>
             <!--floor 2-->
-            <div class="floor" id="floor-2">
+            <div class="floor" id="floor-2" style="display: none">
                 <div class="seed">
                     <img src="./build/imgs/seed.png" alt="">
                 </div>
+                <footer class="footer-details">
+                    <img src="./build/imgs/details-2.png" alt="">
+                </footer>
             </div>
             <!--floor 2 end-->
         </section>
 
-        <footer class="footer-details">
-            <img src="./build/imgs/details.png" alt="">
-        </footer>
+       
     </div>
 </body>
 <script>
+    
+    function tabNavO() {
+
+        var tabNav = PD("#tab-nav");
+
+        tabNav.on("click", ".flex-n1", function () {
+            tabNav.find("a").removeClass("on")
+            var _t = PD(this);
+            var floor = _t.attr("floor")
+            _t.addClass("on")
+
+            PD(".floor").hide()
+
+            PD("#floor-" + floor).show();
+
+        })
+    }
+    tabNavO()
+
 </script>
 
 </html>
