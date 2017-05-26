@@ -1,78 +1,93 @@
-{   
-    "start":"0224-h5",
-    "0224-h5": {
-        "title": "12周年领券活动 H5",
-        "keywords":"",
-        "description":"",
-        "version":"0.0.5",
-        "author":"Julian",
-        "load": {
-            "css": ["./0224-h5/src/scss/main.scss"],
-            "js": ["./libs/js/D.js","./libs/js/view-rem720.js","./0224-h5/src/js/*.js"]
-        },
-        "build":{
-            "css":"app.css",
-            "js":"app.js"
-        }
+{
+  "start": "0526-h5",
+  "0526-h5": {
+    "title": "H5",
+    "keywords": "",
+    "description": "",
+    "version": "0.0.5",
+    "author": "Julian",
+    "load": {
+      "css": ["./0526-h5/src/scss/main.scss"],
+      "js": ["./libs/js/D.js", "./libs/js/view-rem720.js", "./0526-h5/src/js/*.js"]
     },
-    "0224": {
-        "title": "Panli更懂你 12周年领券活动",
-        "keywords":"",
-        "description":"",
-        "version":"0.0.5",
-        "author":"Julian",
-        "load": {
-            "css": ["./0224/src/scss/main.scss"],
-            "js": ["./0224/src/js/*.js"]
-        },
-        "build":{
-            "css":"app.css",
-            "js":"app.js"
-        }
-    },
-    "0209-h5": {
-        "title": "好货大清仓",
-        "keywords":"",
-        "description":"",
-        "version":"0.0.5",
-        "author":"Julian",
-        "load": {
-            "css": ["./0209-h5/src/scss/main.scss"],
-            "js": ["./libs/js/view-rem720.js","./libs/js/google.js","./0209-h5/src/js/*.js"]
-        },
-        "build":{
-            "css":"app.css",
-            "js":"app.js"
-        }
-    },
-    "0209": {
-        "title": "好货大清仓",
-        "keywords":"",
-        "description":"",
-        "version":"0.0.5",
-        "author":"Julian",
-        "load": {
-            "css": ["./0209/src/scss/main.scss"],
-            "js": ["./0209/src/js/*.js"]
-        },
-        "build":{
-            "css":"app.css",
-            "js":"app.js"
-        }
-    },
-    "0926": {
-        "title": "全民爆料",
-        "keywords":"",
-        "description":"",
-        "version":"0.0.2",
-        "author":"Julian",
-        "load": {
-            "css": ["./0926/src/scss/main.scss"],
-            "js": ["./0926/src/js/*.js"]
-        },
-        "build":{
-            "css":"app.css",
-            "js":"app.js"
-        }
+    "build": {
+      "css": "app.css",
+      "js": "app.js"
     }
+  },
+  "0224-h5": {
+    "title": "12周年领券活动 H5",
+    "keywords": "",
+    "description": "",
+    "version": "0.0.5",
+    "author": "Julian",
+    "load": {
+      "css": ["./0224-h5/src/scss/main.scss"],
+      "js": ["./libs/js/D.js", "./libs/js/view-rem720.js", "./0224-h5/src/js/*.js"]
+    },
+    "build": {
+      "css": "app.css",
+      "js": "app.js"
+    }
+  },
+  "0224": {
+    "title": "Panli更懂你 12周年领券活动",
+    "keywords": "",
+    "description": "",
+    "version": "0.0.5",
+    "author": "Julian",
+    "load": {
+      "css": ["./0224/src/scss/main.scss"],
+      "js": ["./0224/src/js/*.js"]
+    },
+    "build": {
+      "css": "app.css",
+      "js": "app.js"
+    }
+  },
+  "0209-h5": {
+    "title": "好货大清仓",
+    "keywords": "",
+    "description": "",
+    "version": "0.0.5",
+    "author": "Julian",
+    "load": {
+      "css": ["./0209-h5/src/scss/main.scss"],
+      "js": ["./libs/js/view-rem720.js", "./libs/js/google.js", "./0209-h5/src/js/*.js"]
+    },
+    "build": {
+      "css": "app.css",
+      "js": "app.js"
+    }
+  },
+  "0209": {
+    "title": "好货大清仓",
+    "keywords": "",
+    "description": "",
+    "version": "0.0.5",
+    "author": "Julian",
+    "load": {
+      "css": ["./0209/src/scss/main.scss"],
+      "js": ["./0209/src/js/*.js"]
+    },
+    "build": {
+      "css": "app.css",
+      "js": "app.js"
+    }
+  },
+  "0926": {
+    "title": "全民爆料",
+    "keywords": "",
+    "description": "",
+    "version": "0.0.2",
+    "author": "Julian",
+    "load": {
+      "css": ["./0926/src/scss/main.scss"],
+      "js": ["./0926/src/js/*.js"]
+    },
+    "build": {
+      "css": "app.css",
+      "js": "app.js"
+    }
+  }
 }
